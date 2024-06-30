@@ -2,7 +2,7 @@
 #include <sys/types.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <textstyle/stdbool.h>
+#include <stdbool.h>
 #include <string.h>
 
 typedef struct
@@ -31,7 +31,7 @@ typedef struct
 int readMultipleOfTwo(char *message)
 {
     int value;
-    printf(message);
+    printf("%s", message);
     scanf("%d", &value);
     if (value % 2 == 0 && value != 0)
     {
